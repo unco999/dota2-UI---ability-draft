@@ -1,0 +1,164 @@
+@import "test.less";
+
+.root {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes my_test {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes bs {
+    0% {
+        brightness: 1;
+    }
+
+    50% {
+        brightness: 2.5;
+    }
+
+    100% {
+        brightness: 1;
+    }
+}
+
+@keyframes my_test1 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+
+.friend.player-index-0 {
+    x: 200px;
+    y: 150px;
+}
+
+.friend.player-index-1 {
+    x: 200px;
+    y: 300px;
+}
+
+.friend.player-index-2 {
+    x: 200px;
+    y: 450px;
+}
+
+.friend.player-index-3 {
+    x: 200px;
+    y: 600px;
+}
+
+.friend.player-index-4 {
+    x: 200px;
+    y: 750px;
+}
+
+.friend.player-index-5 {
+    x: 200px;
+    y: 900px;
+}
+
+.local-player{
+    brightness: 2.5;
+    box-shadow: hollow #fffb00eb 4px 4px 8px 0px; // outer, hollow
+}
+
+.me{
+    box-shadow: hollow #ffffffeb 4px 4px 8px 0px; // outer, hollow
+}
+
+.team-flag-6.team-index-0 {
+    animation-name: my_test1;
+    animation-duration: 3s;
+    background-color: gradient( linear, 100% 0%, 0% 0%, from(#ff000000), color-stop(0.5, #ff00004b), color-stop(0.55, #ff000058), to(rgb(51, 0, 0)) );
+    x: 200px;
+    y: 150px;
+}
+
+.team-flag-6.team-index-1 {
+    animation-name: my_test1;
+    animation-duration: 3s;
+    background-color: gradient( linear, 100% 0%, 0% 0%, from(#ff000000), color-stop(0.5, #ff00004b), color-stop(0.55, #ff000058), to(rgb(51, 0, 0)) );
+
+    x: 200px;
+    y: 300px;
+}
+
+.team-flag-7.team-index-0 {
+    animation-name: my_test1;
+    animation-duration: 3s;
+    background-color: gradient( linear, 100% 0%, 0% 0%, from(#0000ff00), color-stop(0.5, #0000964b), color-stop(0.55, #0000ad58), to(rgb(0, 0, 51)) );
+
+    x: 200px;
+    y: 600px;
+}
+
+.team-flag-7.team-index-1 {
+    animation-name: my_test1;
+    animation-duration: 3s;
+    background-color: gradient( linear, 100% 0%, 0% 0%, from(#0000ff00), color-stop(0.5, #0000964b), color-stop(0.55, #0000ad58), to(rgb(0, 0, 51)) );
+
+    x: 200px;
+    y: 750px;
+}
+
+.team-flag-8.team-index-0 {
+    animation-name: my_test;
+    animation-duration: 3s;
+    background-color: gradient( linear, 100% 0%, 0% 0%, from(#ff800000), color-stop(0.5, #ff80004b), color-stop(0.55, #ff800058), to(rgb(51, 26, 0)) );
+
+    x: 1420px;
+    y: 150px;
+}
+
+.team-flag-8.team-index-1 {
+    animation-name: my_test;
+    animation-duration: 3s;
+    background-color: gradient( linear, 100% 0%, 0% 0%, from(#ff800000), color-stop(0.5, #ff80004b), color-stop(0.55, #ff800058), to(rgb(51, 26, 0)) );
+
+    x: 1420px;
+    y: 300px;
+}
+
+.team-flag-9.team-index-0 {
+    animation-name: my_test;
+    animation-duration: 3s;
+    background-color: gradient( linear, 100% 0%, 0% 0%, from(#00ff0000), color-stop(0.5, #00ff004b), color-stop(0.55, #00ff0058), to(rgb(0, 51, 0)) );
+
+
+    x: 1420px;
+    y: 600px;
+}
+
+.team-flag-9.team-index-1 {
+    animation-name: my_test;
+    animation-duration: 3s;
+    background-color: gradient( linear, 100% 0%, 0% 0%, from(#00ff0000), color-stop(0.5, #00ff004b), color-stop(0.55, #00ff0058), to(rgb(0, 51, 0)) );
+
+
+    x: 1420px;
+    y: 750px;
+}
+
+.big-tile{
+    horizontal-align: center;
+    margin-top: 20px;
+    Label{
+        font-size: 50px;
+        color: white;
+        text-shadow: 1px 1px 1px 3.0 black;
+    }
+}
